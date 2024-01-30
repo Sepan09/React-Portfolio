@@ -1,6 +1,9 @@
-    export default function Home() {
+import './AboutMe.css'
+
+export default function Home() {
         return (
-        <div>
+        <div className="navig">
+            <i className="fa-solid fa-circle-user"></i>
             <h1>About Me</h1>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
