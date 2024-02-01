@@ -3,7 +3,8 @@
 export default function Resume() {
     return (
         <div className="d-flex flex-column align-items-center">
-            <section >
+            <h3 className="pt-3">Resume</h3>
+            <section className="pt-3">
                 <h2 className=''>Front-end proficiencies</h2>
                 <ul className=''> 
                     <li>HTML</li>
@@ -14,7 +15,7 @@ export default function Resume() {
                     <li>Responsive design</li>
                 </ul>
             </section>
-            <section>
+            <section className="pt-3">
                 <h2>Back-end proficiencies</h2>
                 <ul>
                     <li>APIs</li>

@@ -7,7 +7,7 @@ const NavTabs = () => {
     return (
         <div className='d-flex justify-content-between align-items-center'>
             <h1 className='d-flex justify-content-start'>Sepan</h1>
-            <ul className='nav d-flex justify-content-end'>
+            <ul className='nav nav-tabs d-flex justify-content-end'>
                 <li className='nav-item'>
                     <Link
                         to="/"
@@ -16,7 +16,7 @@ const NavTabs = () => {
                         AboutMe
                     </Link>
                 </li>
-                <li className='Nav-item'>
+                <li className='nav-item'>
                     <Link
                         to='/Portfolio'
                         className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
@@ -24,7 +24,7 @@ const NavTabs = () => {
                         Portfolio
                     </Link>
                 </li>
-                <li className='Nav-item'>
+                <li className='nav-item'>
                     <Link
                         to='/Contact'
                         className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
@@ -32,7 +32,7 @@ const NavTabs = () => {
                         Contact
                     </Link>
                 </li>
-                <li className='Nav-item'>
+                <li className='nav-item'>
                     <Link
                         to='/Resume'
                         className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
