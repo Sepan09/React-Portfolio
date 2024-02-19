@@ -1,48 +1,39 @@
-import { Link, useLocation} from 'react-router-dom';
+import { Link,} from 'react-router-dom';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 
-const NavTabs = () => {
-    const currentPage = useLocation().pathname;
-
+export default function NavBar() {
     return (
-        <div className='d-flex justify-content-between align-items-center'>
-            <h1 className='d-flex justify-content-start'>Sepan</h1>
-            <ul className='nav nav-tabs d-flex justify-content-end'>
-                <li className='nav-item'>
-                    <Link
-                        to="/"
-                        className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-                    >
-                        AboutMe
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link
-                        to='/Portfolio'
-                        className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
-                    >
-                        Portfolio
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link
-                        to='/Contact'
-                        className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
-                    >
-                        Contact
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link
-                        to='/Resume'
-                        className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
-                    >
-                        Resume
-                    </Link>
-                </li>
-            </ul>
-        </div>
+        <Box sx={{ flexGrow: 1, display: "flex"}}>
+            <AppBar sx={{ backgroundColor: "#fff" }}>
+            <Toolbar>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: "black", fontWeight: "700" }}>
+                Sepan Mustafa
+                </Typography>
+                <Box sx={{ display: "flex", maxWidth: "300px", }}>
+                <Button variant="h6" component="div" sx={{ flexGrow: 1, color: "black", fontWeight: "500",}}>
+                <Link to='/' style={{textDecoration: "none", color: "black"}}>Home</Link>
+                </Button>
+    
+                <Button variant="h6" component="div" sx={{ flexGrow: 1, color: "black", fontWeight: "500" }}>
+                <Link to='/About' style={{textDecoration: "none", color: "black"}}>About</Link> 
+                </Button>
+    
+                <Button variant="h6" component="div" sx={{ flexGrow: 1, color: "black", fontWeight: "500" }}>
+                <Link to='/Project' style={{textDecoration: "none", color: "black"}}>Project</Link>
+                </Button>
+    
+                <Button variant="h6" component="div" sx={{ flexGrow: 1, color: "black", fontWeight: "500", }}>
+                <Link to='/Contact' style={{textDecoration: "none", color: "black"}}>Contact</Link>
+                </Button>
+                </Box>
+    
+            </Toolbar>
+            </AppBar>
+        </Box>
     );
-}
-
-export default NavTabs
+    }

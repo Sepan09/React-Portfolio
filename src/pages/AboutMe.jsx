@@ -1,10 +1,10 @@
 
 
-export default function Resume() {
+export default function AboutMe() {
     return (
-        <div className="d-flex flex-column align-items-center">
-            <h3 className="pt-3">Resume</h3>
-            <section className="pt-3">
+        <div className="">
+            <h3 className="">Resume</h3>
+            <section className="">
                 <h2 className=''>Front-end proficiencies</h2>
                 <ul className=''> 
                     <li>HTML</li>
@@ -15,7 +15,7 @@ export default function Resume() {
                     <li>Responsive design</li>
                 </ul>
             </section>
-            <section className="pt-3">
+            <section className="">
                 <h2>Back-end proficiencies</h2>
                 <ul>
                     <li>APIs</li>

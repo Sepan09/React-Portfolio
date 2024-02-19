@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App.jsx'
 // import ErrorPage from './pages/ErrorPage.jsx';
-import AboutMe from './pages/AboutMePage.jsx';
-import Portfolio from './pages/PortfolioPage.jsx';
+import Home from './pages/HomePage.jsx';
+import AboutMe from './pages/AboutMe.jsx';
+import Project from './pages/ProjectPage.jsx';
 import Contact from './pages/ContactPage.jsx';
-import Resume from './pages/ResumePage.jsx';
 
 
 const router = createBrowserRouter([
@@ -20,19 +20,19 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <Home />,
+      },
+      {
+        path: 'About',
         element: <AboutMe />,
       },
       {
-        path: 'Portfolio',
-        element: <Portfolio />,
+        path: 'Project',
+        element: <Project />,
       },
       {
         path: 'Contact',
         element: <Contact />,
-      },
-      {
-        path: 'Resume',
-        element: <Resume />,
       },
     ],
   },

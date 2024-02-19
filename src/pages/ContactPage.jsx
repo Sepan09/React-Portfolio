@@ -43,7 +43,7 @@ function Form() {
     };
 
     return (
-        <div className='container text-center p-5'>
+        <div className=''>
             <h2>Contact</h2>
             <form className='form' onSubmit={handleFormSubmit}>
                 <input 
