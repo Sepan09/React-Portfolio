@@ -16,8 +16,8 @@ return (
     // padding: "200px 540px 30px",
     boxSizing: "border-box"}}>
     <Navbar />
-    <Container maxWidth="md" sx={{
-      backgroundColor: "grey",
+    <Container maxWidth="lg" sx={{
+      backgroundColor: "white",
       padding: "300px 0px 0px"
       }}>
       <Home/>
