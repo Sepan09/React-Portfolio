@@ -26,7 +26,7 @@ export default function Home() {
             justifyContent: "space-between"
             }}>
             <Typography variant="h1" sx={{maxWidth: "500px", fontSize: "70px", fontWeight: 600}}>
-                Full-Stack Web Developer <MdWavingHand />
+                Full-Stack Web Developer <MdWavingHand color='#D99058'/>
                 <Typography variant="subtitle1" sx={{paddingTop: "6px"}}>
                     Hi, im Sepan Mustafa, A passionate Full-Stack Developer based in TN, USA. <FaLocationDot />
                 </Typography>
@@ -37,7 +37,7 @@ export default function Home() {
                     <FaGithub />
                 </Link>
             </Typography>
-            <Avatar alt="Remy Sharp" src="/sepan.jpg" sx={{width: 200, height: 200 }}/>
+            <Avatar alt="Remy Sharp" src="/sepan.jpg" sx={{width: 300, height: 300 }}/>
             </Grid>
             <Grid sx={{ 
                 display: "flex",
@@ -51,13 +51,13 @@ export default function Home() {
                 Tech Stack | 
             
             </Typography>
-            <FaHtml5 style={{textDecoration: "none", color: "black", fontSize: "31px"}}/> 
-            <FaCss3Alt style={{textDecoration: "none", color: "black", fontSize: "31px"}}/>
-            <SiJavascript style={{textDecoration: "none", color: "black", fontSize: "31px"}}/>
-            <FaReact style={{textDecoration: "none", color: "black", fontSize: "31px"}}/>
-            <SiTailwindcss style={{textDecoration: "none", color: "black", fontSize: "31px"}}/>
-            <GrMysql style={{textDecoration: "none", color: "black", fontSize: "31px"}}/>
-            <SiMongodb style={{textDecoration: "none", color: "black", fontSize: "31px"}}/>
+            <FaHtml5 color= "#F06529" style={{textDecoration: "none", fontSize: "31px", }}/> 
+            <FaCss3Alt color= "#264de4" style={{textDecoration: "none", fontSize: "31px"}}/>
+            <SiJavascript color= "#f0db4f" style={{textDecoration: "none", backgroundColor: "#323330",fontSize: "31px"}}/>
+            <FaReact color= "#61DBFB" style={{textDecoration: "none", fontSize: "31px"}}/>
+            <SiTailwindcss color= "#66D3FA" style={{textDecoration: "none", fontSize: "31px"}}/>
+            <GrMysql color= "#00758F" style={{textDecoration: "none", fontSize: "31px"}}/>
+            <SiMongodb color= " #3FA037" style={{textDecoration: "none", fontSize: "31px"}}/>
             </Grid>
         </Box>
         );
