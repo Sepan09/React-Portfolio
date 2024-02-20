@@ -34,7 +34,7 @@ export default function AboutMe() {
                 fontSize: "22px",
                 }}
             >
-                A dedicated and passionateFull-Stack Web Developer based in TN, USA.{" "}
+                A dedicated and passionate Full-Stack Web Developer based in TN, USA.
                 <FaLocationDot />
             </Typography>
             <Typography
