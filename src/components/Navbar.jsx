@@ -1,4 +1,3 @@
-import { Link,} from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -16,19 +15,19 @@ export default function NavBar() {
                 </Typography>
                 <Box sx={{ display: "flex", maxWidth: "300px", }}>
                 <Button variant="h6" component="div" sx={{ flexGrow: 1, color: "black", fontWeight: "500",}}>
-                <Link to='/' style={{textDecoration: "none", color: "black"}}>Home</Link>
+                <a href='#HomePage' style={{textDecoration: "none", color: "black"}}>Home</a>
                 </Button>
     
                 <Button variant="h6" component="div" sx={{ flexGrow: 1, color: "black", fontWeight: "500" }}>
-                <Link to='/About' style={{textDecoration: "none", color: "black"}}>About</Link> 
+                <a href='#AboutPage' style={{textDecoration: "none", color: "black"}}>About</a> 
                 </Button>
     
                 <Button variant="h6" component="div" sx={{ flexGrow: 1, color: "black", fontWeight: "500" }}>
-                <Link to='/Project' style={{textDecoration: "none", color: "black"}}>Project</Link>
+                <a href='#ProjectPage' style={{textDecoration: "none", color: "black"}}>Project</a>
                 </Button>
     
                 <Button variant="h6" component="div" sx={{ flexGrow: 1, color: "black", fontWeight: "500", }}>
-                <Link to='/Contact' style={{textDecoration: "none", color: "black"}}>Contact</Link>
+                <a href='#ContactPage' style={{textDecoration: "none", color: "black"}}>Contact</a>
                 </Button>
                 </Box>
     
