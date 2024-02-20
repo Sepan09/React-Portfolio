@@ -1,16 +1,14 @@
 import { Box, Grid, Typography } from "@mui/material";
-import { SiMusicbrainz } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { IoIosBook } from "react-icons/io";
-import { Link } from "react-router-dom"
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+
 
 export default function Contact() {
     return (
         <Box
         sx={{
             height: "auto",
-            padding: "200px 0px 700px",
+            padding: "100px 0px 400px",
             display: "flex",
         }}
         id="ContactPage"
@@ -23,117 +21,48 @@ export default function Contact() {
                 fontSize: "20px",
             }}
             >
-            Portfolio
+                Contact 
             </Typography>
-            <Typography
-            sx={{
-                color: "black",
+            <Typography sx={{
+                padding: "8px 0 0 0",
+                fontSize: "30px",
                 fontWeight: 800,
-                fontSize: "25px",
-            }}
-            >
-            Each Project is a unique peace of development 
-            <SiMusicbrainz
-                color="#089145"
-                style={{
-                textDecoration: "none",
-                fontSize: "40px",
-                padding: "0 0 0 8px",
-                }}
-            />
+
+            }}>
+                Feel Free to hit me up !
             </Typography>
-            <Grid
-            sx={{
-                display: "flex",
-                padding: "60px 20px 0",
-            }}
-            >
-            <img
-                alt="Laptop"
-                src="/Project3.png"
-                style={{ borderRadius: "20px" }}
-                width={620}
-                height={440}
-            />
-            <Typography
-                sx={{
-                padding: "0 0 0 100px",
-                color: "#f0db4f",
-                fontWeight: 700,
-                fontSize: "20px",
-                textAlign: "center",
-                }}
-            >
-                <Typography
-                variant="subtitle1"
-                sx={{
+            <Box sx={{
+                padding: "80px 50px 0 ",
+                justifyContent: "space-around"
+            }}>
+                <Box sx={{display: "flex"}}>
+                    <MdEmail style={{fontSize: "60px", color: "#f0db4f"}}/>
+                <Typography sx={{
+                    fontSize: "25px",
                     fontWeight: 700,
-                    color: "black",
-                    paddingTop: "30px",
-                    fontSize: "22px",
-                }}
-                >
-                    Career Cache <IoIosBook style={{ textDecoration: "none", color: "#9A5944", fontSize: "31px", padding: "0 0 0 7px"}}/>
-                </Typography>
-                <Typography
-                variant="subtitle1"
-                sx={{
-                    color: "black",
-                    paddingTop: "6px",
-                }}
-                >
-                Career Cache is an website made to assist in the job search.
-                Allows the user to save jobs that they have found on other websites 
-                and store them for later use.
-                The main goal of this application is to consolidate all of a
-                user active job applications into one place.
-                </Typography>
-                <Typography sx={{
-                    color: "black",
-                    padding: "30px 110px 0",
-                    display: "flex",
-                    justifyContent: "space-between",
+                    padding: "0 20px 0"
                 }}>
-                    <Typography sx={{
-                        fontWeight: 700,
-                        fontSize: "20px"
-                    }}>
-                    React
-                    </Typography>
-                    <Typography sx={{
-                        fontWeight: 700,
-                        fontSize: "20px"
-                    }}>
-                    MUI
-                    </Typography>
+                    Email
+                <Typography >
+                    Sepanmustafa@gmail.com
                 </Typography>
+                </Typography>
+                <Box sx={{display: "flex"}}>
+                    <FaLocationDot style={{fontSize: "60px", color: "#f0db4f"}}/>
                 <Typography sx={{
-                    color: "black",
-                    padding: "60px 70px 0",
-                    display: "flex",
-                    justifyContent: "space-between",
+                    fontSize: "25px",
+                    fontWeight: 700,
+                    padding: "0 20px 0"
                 }}>
-                    <Typography sx={{
-                        fontWeight: 600,
-                        fontSize: "20px"
-                    }}>
-                    Code 
-                    <Link to="https://github.com/iambryantran/deck">
-                    <FaGithub style={{ textDecoration: "none", color: "black", fontSize: "31px", padding: "0 0 0 7px"}}/>
-                    </Link>
-                    </Typography>
-                    <Typography sx={{
-                        fontWeight: 600,
-                        fontSize: "20px",
-                    }}>
-                    Live Demo
-                    <Link to="https://career-cache.onrender.com" >
-                    <FaExternalLinkAlt style={{ textDecoration: "none", color: "black", fontSize: "29px", padding: "0 0 0 7px" }}/>
-                    </Link>
-                    </Typography>
+                    Location
+                <Typography >
+                    TN, USA
                 </Typography>
-            </Typography>
-            </Grid>
+                </Typography>
+                </Box>
+                </Box>
+
+            </Box>
         </Grid>
         </Box>
     );
