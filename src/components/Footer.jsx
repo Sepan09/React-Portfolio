@@ -1,23 +1,17 @@
 export default function Footer() {
     return (
             <footer className="mb-4 text-center">
-                <a
-                className="btn btn-outline-light btn-floating m-1"
-                href="https://www.facebook.com/"
-                role="button"
-                ><i className="fab fa-facebook-f text-dark">facebook</i>
-                </a>
 
                 <a
                 className="btn btn-outline-light btn-floating m-1"
-                href="https://www.linkedin.com/feed/"
+                href="https://www.linkedin.com/in/sepan-mustafa-73b0412a4/"
                 role="button"
                 ><i className="fab fa-linkedin-in text-dark"></i>
                 </a>
 
                 <a
                 className="btn btn-outline-light btn-floating m-1"
-                href="https://github.com/"
+                href="https://github.com/Sepan09"
                 role="button"
                 ><i className="fab fa-github text-dark"></i>
                 </a>

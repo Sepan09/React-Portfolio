@@ -6,7 +6,7 @@ export default function AboutMe() {
         <Box
         sx={{
             height: "auto",
-            padding: "500px 0px 700px",
+            padding: "300px 0px 320px",
         }}
         id="AboutPage"
         >

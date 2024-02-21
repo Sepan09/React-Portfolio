@@ -18,7 +18,7 @@ export default function Home() {
         <Box 
         sx={{
             height: "auto",
-            padding: "180px 0 500px",
+            padding: "180px 0 300px",
             
         }}
         id= "HomePage"
