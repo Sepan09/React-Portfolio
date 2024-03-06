@@ -28,9 +28,9 @@ export default function Home() {
             variant="h1"
             sx={{ maxWidth: "500px", fontSize: "70px", fontWeight: 600 }}
             >
-            Full-Stack Web Developer <MdWavingHand color="#D99058" />
+            Full-Stack Web Developer |  Frontend <MdWavingHand color="#D99058" />
             <Typography variant="subtitle1" sx={{ paddingTop: "6px" }}>
-                Hi, im Sepan Mustafa, A passionate Full-Stack Developer based in TN,
+                Hi, im Sepan Mustafa, A Full-Stack Developer with passion for Frontend development based in TN,
                 USA. <FaLocationDot />
             </Typography>
             <Link
